@@ -20,7 +20,82 @@ Agri-Sahayak is a hyper-local, multi-modal AI assistant designed to bridge the c
 - **Platforms & APIs**: Twilio (Voice & SMS), OpenWeatherMap, data.gov.in
 - **Database**: SQLite
 
-## ⚙️ Local Setup and Installation
+# Deployed 
+- **link** : https://agrisahayak-frontend.vercel.app/
+
+
+> **MVP Status:** Functional Prototype / Investment-Ready
+> This project was developed with a "Low-Cost / High-Innovation" philosophy, prioritizing core logic validation over expensive infrastructure.
+
+---
+
+## 🛠 Strategic Architecture & MVP Constraints
+
+To ensure a rapid, zero-cost deployment, several intentional architectural compromises were made. These "degradations" allowed us to validate the core logic without incurring cloud overhead.
+
+### ⚠️ Infrastructure Trade-offs
+| Component | Current MVP State (Free Tier) | Production Grade (Investment Ready) |
+| :--- | :--- | :--- |
+| **Database** | **SQLite** (Single file) | **PostgreSQL** / Cloud SQL |
+| **Scaling** | **Single Backend Instance** | Load-balanced Microservices |
+| **Vector Search** | **Local FAISS** Storage | **Pinecone / Milvus** (Distributed) |
+| **Scheduling** | **Manual Cron Jobs** | Event-driven Pipelines (Kafka/SQS) |
+| **Monitoring** | Basic Logging | Full Observability (Grafana/ELK) |
+
+### ⚠️ AI & Communication Constraints
+* **AI Capping:** Gemini usage is limited to free-tier quotas; embedding cache is minimized.
+* **Model Depth:** No agriculture-specific fine-tuning; relies on base RAG logic.
+* **Voice/SMS:** Twilio minutes are capped for testing; SMS alerts are throttled.
+* **Localization:** Currently lacks regional language IVR voices or WhatsApp integration.
+* **Frontend:** Basic dashboard UI without offline mode for low-connectivity regions.
+
+---
+
+## 🎯 Why These Constraints Were Acceptable
+
+Despite these limitations, the system successfully validates the core innovation that investors look for:
+
+- [x] **End-to-End Functionality:** Real farmers can call and receive automated advice.
+- [x] **RAG Accuracy:** Retrieval-Augmented Generation provides state-level precise data.
+- [x] **Modular Design:** The codebase is designed to "hot-swap" SQLite for Postgres or FAISS for a Cloud Vector DB seamlessly.
+- [x] **Scalability Path:** Clear technical roadmap to transition from MVP to a national platform.
+
+---
+
+## 🚀 Post-Investment Roadmap
+
+With funding, Agri-Sahayak will transform into a production-grade national platform.
+
+### 🧠 Intelligence Expansion
+* **Fine-tuned LLM:** Development of a domain-specific model trained on agricultural datasets.
+* **Computer Vision:** Integration of crop-disease detection via image uploads.
+* **Predictive Analytics:** Seasonal yield forecasting and personalized recommendation engines.
+* **Regional Voice:** Multi-language AI voices supporting local dialects.
+
+### 📞 Feature & Channel Growth
+* **Omnichannel Support:** Full WhatsApp Chatbot and regional IVR integration.
+* **Advanced Data:** Soil health card integration and Satellite (NDVI) crop health insights.
+* **Offline-First:** Mobile application designed for regions with 2G/Low connectivity.
+* **Financial Links:** Direct integration for insurance, subsidies, and government advisories.
+
+---
+
+## 📈 Investment Readiness
+
+**Agri-Sahayak** is a proven working concept in a massive rural market. We have successfully demonstrated that the AI can bridge the gap between complex agricultural data and the end-user (the farmer) via a simple phone call.
+
+- **Market Opportunity:** Massive rural reach.
+- **Scalable Tech:** Built on modern AI/RAG stacks.
+- **Monetization:** Clear paths through Govt. partnerships, NGOs, and Agri-SaaS.
+
+---
+
+
+
+
+
+
+# ⚙️ Local Setup and Installation
 
 ### Prerequisites
 
