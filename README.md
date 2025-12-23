@@ -244,15 +244,6 @@ agri-sahayak/
 ### Health Checks
 - `GET /health/index/{user_id}` - Check FAISS index status
 
-## 🌐 Deployment
-
-The application is designed to be deployed on cloud platforms with the following considerations:
-
-1. **Backend**: Deploy FastAPI app using services like Railway, Heroku, or AWS
-2. **Frontend**: Deploy React app using Netlify, Vercel, or similar
-3. **Environment Variables**: Configure all API keys in production environment
-4. **FAISS Indexes**: Ensure knowledge base files are properly uploaded and indexed
-
 ## 🔮 Future Work
 
 Our vision is to evolve Agri-Sahayak from a trusted advisor into a predictive co-pilot and a full-stack agricultural ecosystem, integrating the entire supply chain from seed to sale.
