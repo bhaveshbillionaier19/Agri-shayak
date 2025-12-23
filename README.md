@@ -90,11 +90,6 @@ With funding, Agri-Sahayak will transform into a production-grade national platf
 
 ---
 
-
-
-
-
-
 # ⚙️ Local Setup and Installation
 
 ### Prerequisites
